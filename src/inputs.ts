@@ -61,42 +61,28 @@ export class Inputs {
         if (!content) {
             return '';
         }
-        if (this.systemMessage) {
-            content = content.replace('$system_message', this.systemMessage);
+
+        const replacements = {
+            '$system_message': this.systemMessage,
+            '$title': this.title,
+            '$description': this.description,
+            '$raw_summary': this.rawSummary,
+            '$short_summary': this.shortSummary,
+            '$filename': this.filename,
+            '$file_content': this.fileContent,
+            '$file_diff': this.fileDiff,
+            '$patches': this.patches,
+            '$diff': this.diff,
+            '$comment_chain': this.commentChain,
+            '$comment': this.comment
+        };
+
+        for (const [key, value] of Object.entries(replacements)) {
+            if (value) {
+                content = content.replace(key, value);
+            }
         }
-        if (this.title) {
-            content = content.replace('$title', this.title);
-        }
-        if (this.description) {
-            content = content.replace('$description', this.description);
-        }
-        if (this.rawSummary) {
-            content = content.replace('$raw_summary', this.rawSummary);
-        }
-        if (this.shortSummary) {
-            content = content.replace('$short_summary', this.shortSummary);
-        }
-        if (this.filename) {
-            content = content.replace('$filename', this.filename);
-        }
-        if (this.fileContent) {
-            content = content.replace('$file_content', this.fileContent);
-        }
-        if (this.fileDiff) {
-            content = content.replace('$file_diff', this.fileDiff);
-        }
-        if (this.patches) {
-            content = content.replace('$patches', this.patches);
-        }
-        if (this.diff) {
-            content = content.replace('$diff', this.diff);
-        }
-        if (this.commentChain) {
-            content = content.replace('$comment_chain', this.commentChain);
-        }
-        if (this.comment) {
-            content = content.replace('$comment', this.comment);
-        }
+
         return content;
     }
 }
