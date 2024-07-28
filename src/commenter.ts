@@ -28,7 +28,7 @@ export const RAW_SUMMARY_START_TAG = `<!-- This is an auto-generated comment: ra
 <!--
 `;
 export const RAW_SUMMARY_END_TAG = `-->
-<!-- end of auto-generated comment: raw summary by OSS CodeRabbit -->`;
+<!-- end of auto-generated comment: raw summary by OSS CoreDuck -->`;
 
 export const SHORT_SUMMARY_START_TAG = `<!-- This is an auto-generated comment: short summary by OSS CoreDuck -->
 <!--
