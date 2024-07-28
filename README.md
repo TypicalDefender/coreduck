@@ -41,7 +41,7 @@ name: Code Review using coreduck
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize, reopened]
   pull_request_review_comment:
     types: [created]
 
