@@ -29,15 +29,8 @@ Coreduck is an AI-based code reviewer and summarizer for GitHub pull requests us
 - **Smart review skipping**: By default, skips in-depth review for simple changes (e.g., typo fixes) and when changes look good for the most part. It can be disabled by setting `review_simple_changes` and `review_comment_lgtm` to `true`.
 - **Customizable prompts**: Tailor the `system_message`, `summarize`, and `summarize_release_notes` prompts to focus on specific aspects of the review process or even change the review objective.
 
-To use this tool, you need to add the provided YAML file to your repository and configure the required environment variables, such as `GITHUB_TOKEN` and `OPENAI_API_KEY`. For more information on usage, examples, contributing, and FAQs, you can refer to the sections below.
+To use this tool, you need to add the provided YAML file to your repository and configure the required environment variables, such as `GITHUB_TOKEN` and `OPENAI_API_KEY`.
 
-- [Overview](#overview)
-- [Reviewer Features](#reviewer-features)
-- [Install instructions](#install-instructions)
-- [Conversation with Coreduck](#conversation-with-coreduck)
-- [Examples](#examples)
-- [Contribute](#contribute)
-- [FAQs](#faqs)
 
 ## Install instructions
 
