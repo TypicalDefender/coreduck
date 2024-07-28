@@ -28,7 +28,9 @@ export class Bot {
 
     private initializeAPI(options: Options, openaiOptions: OpenAIOptions): ChatGPTAPI | null {
         if (!process.env.OPENAI_API_KEY) {
-            throw new Error("Unable to initialize the OpenAI API, 'OPENAI_API_KEY' environment variable is not available");
+            throw new Error(
+                "Unable to initialize the OpenAI API, 'OPENAI_API_KEY' environment variable is not available"
+            );
         }
 
         const systemMessage = this.constructSystemMessage(options, openaiOptions);

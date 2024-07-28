@@ -63,18 +63,18 @@ export class Inputs {
         }
 
         const replacements = {
-            '$system_message': this.systemMessage,
-            '$title': this.title,
-            '$description': this.description,
-            '$raw_summary': this.rawSummary,
-            '$short_summary': this.shortSummary,
-            '$filename': this.filename,
-            '$file_content': this.fileContent,
-            '$file_diff': this.fileDiff,
-            '$patches': this.patches,
-            '$diff': this.diff,
-            '$comment_chain': this.commentChain,
-            '$comment': this.comment
+            $system_message: this.systemMessage,
+            $title: this.title,
+            $description: this.description,
+            $raw_summary: this.rawSummary,
+            $short_summary: this.shortSummary,
+            $filename: this.filename,
+            $file_content: this.fileContent,
+            $file_diff: this.fileDiff,
+            $patches: this.patches,
+            $diff: this.diff,
+            $comment_chain: this.commentChain,
+            $comment: this.comment,
         };
 
         for (const [key, value] of Object.entries(replacements)) {
