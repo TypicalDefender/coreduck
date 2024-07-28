@@ -12,7 +12,7 @@ import { getTokenCount } from './tokenizer';
 // eslint-disable-next-line camelcase
 const context = github_context;
 const repo = context.repo;
-const ASK_BOT = '@coderabbitai';
+const ASK_BOT = '@coreduckai';
 
 export const handleReviewComment = async (heavyBot: Bot, options: Options, prompts: Prompts) => {
     const commenter: Commenter = new Commenter();
