@@ -392,13 +392,7 @@ ${SHORT_SUMMARY_END_TAG}
 ---
 
 <details>
-<summary>Uplevel your code reviews with CoreDuck Pro</summary>
-
-### CoreDuck Pro
-
-If you like this project, please support us by purchasing the [Pro version](https://coreduck.ai). The Pro version has advanced context, superior noise reduction and several proprietary improvements compared to the open source version. Moreover, CoreDuck Pro is free for open source projects.
-
-</details>
+<summary>coreduck believes in open source</summary>
 `;
 
     statusMsg += `
