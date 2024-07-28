@@ -39,22 +39,18 @@ Coreduck runs as a GitHub Action. Add the below file to your repository at `.git
 ```yaml
 name: Code Review using coreduck
 
-permissions:
-  contents: read
-  pull-requests: write
-
 on:
   pull_request:
+    types: [opened]
   pull_request_review_comment:
     types: [created]
 
-concurrency:
-  group:
-    ${{ github.repository }}-${{ github.event.number || github.head_ref || github.sha }}-${{ github.workflow }}-${{ github.event_name == 'pull_request_review_comment' && 'pr_comment' || 'pr' }}
-  cancel-in-progress: ${{ github.event_name != 'pull_request_review_comment' }}
+permissions:
+  pull-requests: write
+  contents: read
 
 jobs:
-  review:
+  code-review:
     runs-on: ubuntu-latest
     steps:
       - uses: TypicalDefender/coreduck@main
@@ -65,3 +61,4 @@ jobs:
           debug: false
           review_simple_changes: false
           review_comment_lgtm: false
+          disable_release_notes: true
