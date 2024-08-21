@@ -153,3 +153,5 @@ export const handleReviewComment = async (heavyBot: Bot, options: Options, promp
         info(`Skipped: ${context.eventName} event is from the bot itself`);
     }
 };
+
+// eslint-disable-next-line camelcase
