@@ -31,6 +31,11 @@ Coreduck is an AI-based code reviewer and summarizer for GitHub pull requests us
 
 To use this tool, you need to add the provided YAML file to your repository and configure the required environment variables, such as `GITHUB_TOKEN` and `OPENAI_API_KEY`.
 
+## Sample review comments:
+<img width="748" alt="Screenshot 2024-07-28 at 11 20 03 PM" src="https://github.com/user-attachments/assets/5690d5ac-d5d1-421c-a285-5e34e792a5d4">
+<img width="755" alt="Screenshot 2024-07-28 at 11 20 20 PM" src="https://github.com/user-attachments/assets/210aec11-1a50-4578-9197-58b658395f51">
+
+
 
 ## Install instructions
 
